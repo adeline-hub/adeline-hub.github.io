@@ -1,39 +1,26 @@
-/* General page reset to remove default margins and paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Navigation Menu */
+.main-menu {
+  display: flex;
+  gap: 10px;
+  margin-left: 40px; /* Left margin */
 }
 
-/* Styling the navigation bar */
-nav {
-    background-color: #333; /* Dark background color */
-    text-align: center; /* Center the navbar */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
 }
 
-nav ul {
-    list-style: none; /* Remove bullets from the list */
-    display: flex; /* Use flexbox for horizontal layout */
-    justify-content: center; /* Center the list items horizontally */
-    padding: 10px 0; /* Add some padding to the navbar */
+.menu li {
+  padding: 8px 12px;
+  border-radius: 4px;
 }
 
-nav ul li {
-    margin: 0 20px; /* Add space between list items */
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+      text-transform: uppercase;
 }
-
-nav ul li a {
-    color: #fff; /* White text */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Font size */
-    font-weight: 600; /* Bold font weight */
-    padding: 8px 16px; /* Add some padding inside the links */
-    transition: background-color 0.3s; /* Smooth transition on hover */
-}
-
-/* Hover effect */
-nav ul li a:hover {
-    background-color: #4CAF50; /* Green background on hover */
-    border-radius: 5px; /* Rounded corners */
-}
-
